@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mitt Prosjekt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">LOGO</div>
+
+    <div class="nav-links">
+      <a href="index.html">Hjem</a>
+      <a href="omoss.html">Om oss</a>
+      <a href="prosjekter.html">Prosjekter</a>
+    </div>
+
+    <a href="#" class="contact-btn" onclick="openModal()">Kontakt oss</a>
+  </nav>
+
+  <!-- MAIN -->
+  <div class="main-content">
+    <h2>Kort oversikt</h2>
+
+    <div class="btn-box">
+      <button onclick="visAlert()">Trykk for hilsen</button>
+      <button onclick="sjekkStatus()">Sjekk status</button>
+    </div>
+
+    <div class="hoved-container">
+      <div class="kort">
+        <img src="img_avatar.png" alt="Avatar">
+        <div class="container">
+          <h4>Jaroslav Sakun</h4>
+          <p>Elev</p>
+        </div>
+      </div>
+
+      <div class="kort">
+        <img src="img_avatar.png" alt="Avatar">
+        <div class="container">
+          <h4>Jaroslav Sakun</h4>
+          <p>Elev</p>
+        </div>
+      </div>
+
+      <div class="kort">
+        <img src="img_avatar.png" alt="Avatar">
+        <div class="container">
+          <h4>Jaroslav Sakun</h4>
+          <p>Elev</p>
+        </div>
+      </div>
+
+      <div class="kort">
+        <img src="img_avatar.png" alt="Avatar">
+        <div class="container">
+          <h4>Jaroslav Sakun</h4>
+          <p>Elev</p>
+        </div>
+      </div>
+
+      <div class="kort">
+        <img src="img_avatar.png" alt="Avatar">
+        <div class="container">
+          <h4>Jaroslav Sakun</h4>
+          <p>Elev</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Logo website</p>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h3>Kontakt oss</h3>
+
+      <input type="text" placeholder="Navn">
+      <input type="email" placeholder="Epost">
+      <textarea placeholder="Beskjed"></textarea>
+
+      <div class="modal-buttons">
+        <button onclick="closeModal()">Avbryt</button>
+        <button onclick="sendForm()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
