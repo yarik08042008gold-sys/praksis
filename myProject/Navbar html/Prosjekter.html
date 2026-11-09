@@ -1,144 +1,24 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-  }
-
-  .navbar {
-    position: fixed;  
-    top: 0;
-    left: 0;             
-    width: 100%;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    background-color: #04AA6D; /* Тот самый зеленый цвет */
-    padding: 10px 20px;
-    box-sizing: border-box;
-    z-index: 1000;
-  }
-
-  .logo {
-    color: white;
-    font-weight: bold;
-    flex: 1;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex: 2;
-  }
-
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .contact-container {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-  }
-
-  .contact-btn {
-    color: white;
-    text-decoration: none;
-    border: 1px solid white;
-    padding: 5px 15px;
-    border-radius: 5px;
-  }
-
-  .main-content { 
-    flex: 1;
-    padding-top: 120px;
-    text-align: center;
-  }
-
-  .info-box {
-    max-width: 700px;
-    margin: 0 auto;
-    background: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
-
-  /* Стили для списка продуктов */
-  .product-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-top: 20px;
-  }
-
-  .product-card {
-    background: #f1f1f1;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: left;
-  }
-
-  .footer {
-    background-color: rgb(0, 234, 0);
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-  }
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="YFF-nettsted for Yaroslav Sakun. Praksis hos Mobit Levanger høsten 2026.">
+<title>Prosjekter | Yaroslav - YFF 2026</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <nav class="navbar">
-    <div class="logo">LOGO</div>
-    <div class="nav-links">
-      <a href="index.html">Hjem</a>
-      <a href="omoss.html">Om oss</a>
-      <a href="prosjekter.html">Produkter</a>
-    </div>
-    <div class="contact-container">
-      <a href="#" class="contact-btn">Kontakt oss</a>
-    </div>
-  </nav>
-
-  <div class="main-content">
-    <div class="info-box">
-      <h1>Våre Produkter</h1>
-      <p>Her er en oversikt over hva vi jobber med og hva vi tilbyr våre kunder.</p>
-      
-      <div class="product-grid">
-        <div class="product-card">
-          <h3>Webutvikling</h3>
-          <p>Vi lager moderne og raske nettsider tilpasset dine behov.</p>
-        </div>
-        <div class="product-card">
-          <h3>Grafisk Design</h3>
-          <p>Vi hjelper deg med logoer, farger og visuell profil.</p>
-        </div>
-      </div>
-
-      <br><br>
-      <a href="index.html" style="color: #04AA6D; font-weight: bold; text-decoration: none;">← Gå tilbake til Hjem</a>
-    </div>
-  </div>
-
-  <footer class="footer">
-    <div class="footer-title">Logo websitte</div>
-  </footer>
-<script src="script.js"></script>
+<a class="skip-link" href="#innhold">Hopp til innhold</a>
+<header class="site-header"><nav class="navbar" aria-label="Hovedmeny"><a class="logo" href="index.html">YFF <span>• Yaroslav</span></a><div class="nav-links"><a href="index.html" >Hjem</a><a href="omoss.html" >Om Mobit</a><a href="praksis.html" >Praksislogg</a><a href="Prosjekter.html" aria-current="page">Prosjekter</a></div></nav></header>
+<main id="innhold">
+<section class="page-intro"><p class="eyebrow">Arbeid på skolen</p><h1>Mine prosjekter</h1><p class="lead">Her viser jeg noen oppgaver og prosjekter fra VG2. De er skolearbeid og er ikke oppgaver jeg har gjort for Mobit.</p></section>
+<section class="section"><div class="project-grid">
+<article class="project-card"><p class="eyebrow">Utvikling</p><h2>Booking av skoleutstyr</h2><p>Jeg jobber i en gruppe med et system der elever kan reservere utstyr på skolen. Vi har arbeidet med innlogging, bestillinger og database.</p><p class="tech">JavaScript · Cloudflare · Supabase</p><p><strong>Dette lærte jeg:</strong> Planlegging, databaser og hvordan man samarbeider om utvikling.</p></article>
+<article class="project-card"><p class="eyebrow">Brukere og kommunikasjon</p><h2>Hospitering for 10. trinn</h2><p>Vi hadde en stasjon med VR og brettspill for elever fra 10. trinn. Jeg var med på å planlegge og hjelpe elevene med VR-brillene.</p><p><strong>Utfordringer:</strong> En person møtte ikke opp, vi fikk ikke vist VR på storskjerm, og en kontroller gikk tom for strøm.</p></article>
+<article class="project-card"><p class="eyebrow">Nettverk</p><h2>UTP, STP og FTP</h2><p>Jeg jobbet med en plakat om forskjellige typer nettverkskabler. Jeg lærte om skjerming, forstyrrelser og bruksområder.</p></article>
+<article class="project-card"><p class="eyebrow">IT-drift</p><h2>Mini Data Center</h2><p>På skolen har vi planlagt et lite datasenterprosjekt med virtuelle maskiner, nettverk og overvåking. Dette er et prosjekt under utvikling.</p></article>
+</div></section>
+</main>
+<footer class="footer"><p>Yaroslav Sakun • YFF, VG2 informasjonsteknologi • Levanger videregående skole • Høsten 2026</p></footer>
 </body>
 </html>
